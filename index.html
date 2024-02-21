@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>YC.L</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
- 
-  <!-- Favicons -->
+   <!-- Favicons -->
    <link href="assets/img/logo.png" rel="shortcut icon">
    <link href="assets/img/logo.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="public/commonCss.js"></script>
+  <!-- JavaScript File -->
+  <script src="assets/js/jquery.js"></script>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <!-- JavaScript File -->
-  <script src="js/jquery-3.3.1.js" type="text/JavaScript" charset="utf-8"></script>
-
 </head>
 <style>
 #hero {
@@ -40,24 +30,9 @@
   <!-- ======= menu列 ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
     <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto active" href="#hero">主頁</a></li>
-        <li><a class="nav-link scrollto" href="#about">關於</a></li>
-       <!--  <li><a class="nav-link scrollto" href="#resume">學歷</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">專題作品</a></li> -->
-        <li class="dropdown"><a class="nav-link scrollto" href="#portfolio"><span>作品</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="portfolio-ukn.html#">輔導課管理系統</a></li>
-            <li><a href="portfolio-ncut.html">自行車防盜系統</a></li>
-          </ul>         
-        </li>
-        <li><a class="nav-link scrollto" href="#contact">聯絡我</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
-  </header><!-- End Header -->
-
+    <div class="headerpage"></div>  
+    </nav>
+  </header>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container">
@@ -66,9 +41,7 @@
       <a href="#about" class="btn-scroll scrollto" title="About me"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
-
   <main id="main">
-
     <!-- ======= About Me Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -84,7 +57,8 @@
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>網站 Website：</strong> <span><i class="fa-window-maximize"></i></a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>網站 Website：</strong> <span><a href="https://chinglee1228.github.io/ycl/" ><img  width="25px"src="assets/img/icon/web.png">
+                      <i class="bi bi-github "></i></a></span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>國籍 Nationality：</strong> <span>Taiwan</span></li>
                     <!-- <li><i class="bi bi-chevron-right"></i> <strong>生日 Birthday：</strong> <span>2000/12/28</span></li> -->
                     <li><i class="bi bi-chevron-right"></i> <strong>學位 Degree：</strong> <span>Master</span></li>
@@ -135,8 +109,6 @@
         </div>
       </div>
     </section><!-- End About Me Section -->
-
-
     <!-- ======= 學經歷 ======= -->
     <section id="about" class="resume">
       <div class="container">
@@ -159,7 +131,6 @@
           </div>
       </div>
     </section><!-- End My Resume Section -->
-
     <!-- ======= 我的作品 ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
@@ -205,9 +176,6 @@
 
       </div>
     </section><!-- End My Portfolio Section -->
-
-
-
     <!-- ======= 聯絡我 ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -248,37 +216,23 @@
             -->
             </div>
     </section><!-- End Contact Me Section -->
-
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
-  <div class="footerPage">
-  <footer id="footer">
-    <div class="container">
-      <h3>YC.L</h3> 
-      <p></p>
-      <div class="social-links">
-       <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
-        <a href="https://www.facebook.com/yanqingl1/?viewas=&should_open_composer=false&show_switched_toast=false&show_invite_to_follow=false&show_switched_tooltip=false&show_podcast_settings=false&show_community_review_changes=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/ching._.1228/" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div> 
-      Designed by <a href="#">yclee</a>
-  </footer> 
-</div>
+  <div class="footerpage"></div>
 <!-- End Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="public/commonjs.js"></script>
+  <script>
+    $(function(){
+        /*公共部分
+         * 導航欄
+         * footer CopyRight
+         */
+        $(".headerpage").load("header.html");
+        $(".footerpage").load("footer.html");
+    });
+</script>
 </body>
 
 </html>

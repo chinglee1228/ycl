@@ -8,52 +8,26 @@
   <title>YC.L - 專題成果</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="shortcut icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <script src="public/commonCss.js"></script>
+  <!-- JavaScript File -->
+  <script src="assets/js/jquery.js"></script>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
-
     <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto " href="index.html">主頁</a></li>
-        <li><a class="nav-link scrollto" href="index.html#about">關於</a></li>
-        <!--  <li><a class="nav-link scrollto" href="index.html#resume">學經歷</a></li> -->
-        <li class="dropdown "><a class="nav-link scrollto active"href="#"><span>作品</span> <i class="bi bi-chevron-down active"></i></a>
-          <ul>
-            <li ><a href="portfolio-ukn.html">輔導課管理系統</a></li>
-            <li ><a href="#">自行車防盜系統</a></li>
-            <!--<li class="dropdown "><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-               </ul>
-            </li>-->
-          </ul>
-        </li>
-        <li><a class="nav-link scrollto" href="index.html#contact">聯絡</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
+      <div class="headerpage"></div>  
+      </nav>
   </header><!-- End Header -->
 
   <main id="main">
@@ -155,33 +129,22 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <div class="footerPage">
-    <footer id="footer">
-      <div class="container">
-        <h3>YC.L</h3> 
-        <p></p>
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/yanqingl1/?viewas=&should_open_composer=false&show_switched_toast=false&show_invite_to_follow=false&show_switched_tooltip=false&show_podcast_settings=false&show_community_review_changes=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/ching._.1228/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        </div>
-           Designed by <a href="#">yclee</a>
-     </footer> 
-  </div>
+  <div class="footerpage"></div>
   <!-- End Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="public/commonjs.js"></script>
+  <script>
+    $(function(){
+        /*公共部分
+         * 導航欄
+         * footer CopyRight
+         */
+        $(".headerpage").load("header.html");
+        $(".footerpage").load("footer.html");
+    });
+</script>
 </body>
 
 </html>
