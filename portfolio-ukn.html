@@ -14,26 +14,21 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <script src="public/commonCss.js"></script>
-  <!-- JavaScript File -->
-  <script src="assets/js/jquery.js"></script>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
     <nav id="navbar" class="navbar">
       <div class="headerpage"></div>  
       </nav>
-  </header><!-- End Header -->
-
+  </header>
+<!-- End Header -->
   <main id="main">
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
             <h2><strong>作品 - 專題</strong></h2>         
           <ol>
@@ -42,20 +37,18 @@
             <li>輔導課管理系統</li>
           </ol>
         </div>
-
       </div>
     </section><!-- Breadcrumbs Section -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+      <div class="container ">
+        <div class="row gy-4 ">
+          <div class="col-lg-8 portfolio-details-slider">
+          <div class=" swiper">
+      
               <div class="swiper-wrapper align-items-center">
-
+                
                 <div class="swiper-slide">
                   <img src="assets/img/topic/ukn/w1.png" alt="">
                 </div>
@@ -101,9 +94,11 @@
                 </div><div class="swiper-slide">
                   <img src="assets/img/topic/ukn/w16.png" alt="">
                 </div>
-
+                
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
 
@@ -113,7 +108,7 @@
                 src="assets/img/uknlogo.png"></h3>
                 <li><strong><b>專題項目:</b></strong> 輔導課管理系統</li>
                 <li><strong>使用對象:</strong> 系主任、開課教師、TA</li> 
-                <li><strong>網站: </strong><a href="http://mysql.im.ukn.edu.tw/~classTA/" ><img  width="25px"src="assets/img/icon/web.png"></a></li>
+                <li><strong>網站: </strong><a href="http://mysql.im.ukn.edu.tw/~classTA/" ><img  width="25px"src="assets/img/uknlogo.png"></a></li>
               </ul>
               <h3 class="resume-title"></h3>
               <h4><b>系統特色</b></h4></p>
@@ -149,10 +144,6 @@
   <script src="public/commonjs.js"></script>
   <script>
     $(function(){
-        /*公共部分
-         * 導航欄
-         * footer CopyRight
-         */
         $(".headerpage").load("header.html");
         $(".footerpage").load("footer.html");
     });
